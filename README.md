@@ -40,5 +40,22 @@ O objetivo é determinar qual é a estratégia de gerenciamento de estoque mais 
 ## Instalação
 
 1. Clone o repositório:
-   ```bash
+   ```
    git clone https://github.com/seu-usuario/inventory-rl.git
+   ```
+
+2. Crie um ambiente e ative-o:
+   ```
+   python -m venv venv
+   source venv\bin\activate # No Windows use `venv\Scripts\activate`
+   ```
+
+3. Instale as dependências necessárias:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Navegue até o diretório do projeto:
+   ```
+   cd inventory-rl
+   ```
