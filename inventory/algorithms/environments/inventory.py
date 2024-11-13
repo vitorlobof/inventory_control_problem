@@ -7,9 +7,9 @@ class InventoryEnvironment:
     actions: int = 3
 
     probs = np.array([
-        [1.0, 0.0, 0.0],
-        [0.3, 0.7, 0.0],
-        [0.1, 0.2, 0.7],
+        [1.00, 0.00, 0.00],
+        [0.30, 0.70, 0.00],
+        [0.09, 0.30, 0.61],
     ], dtype="float64")
 
     @classmethod
@@ -36,11 +36,11 @@ class InventoryEnvironment:
 
     @classmethod
     def maintance(cls, units: int) -> float:
-        return - 1 * units
+        return - 2 * units
 
     @classmethod
     def delivery(cls, units: int) -> float:
         if units == 0:
             return 0.0
 
-        return - 2
+        return - 5
